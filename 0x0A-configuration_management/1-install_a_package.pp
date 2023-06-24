@@ -1,8 +1,6 @@
-# Install flask
-package {'flask -v 2.1.0':
+# Install flask from pip3
+
+package {'flask':
   ensure   => '2.1.0',
-  provider => 'puppet'
-}
-execute {'flask':
- command => 'pip3 install flask -v 2.1.0',
+  provider => 'pip3'
 }
