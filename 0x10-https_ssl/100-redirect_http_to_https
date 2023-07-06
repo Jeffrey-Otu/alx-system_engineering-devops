@@ -41,8 +41,8 @@ frontend  ollyjhay-frontend
         default_backend ollyjhay-backend
 backend ollyjhay-backend
         balance roundrobin
-        server 99587-web-01 54.175.146.176:80 check
-        server 99587-web-02 54.87.218.25:80 check
+        server 99587-web-01 54.175.146.176 check
+        server 99587-web-02 54.87.218.25 check
 
 listen http-in
         bind :80
